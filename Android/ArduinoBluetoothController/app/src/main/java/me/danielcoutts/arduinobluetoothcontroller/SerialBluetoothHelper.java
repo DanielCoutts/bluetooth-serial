@@ -13,6 +13,8 @@ import java.util.UUID;
 
 /**
  * Helper for sending strings of data to a serial Bluetooth device.
+ *
+ * Created by Daniel Coutts. https://github.com/DanielCoutts
  */
 public class SerialBluetoothHelper {
 
@@ -123,7 +125,7 @@ public class SerialBluetoothHelper {
         if (bluetoothAdapter != null && bluetoothSocket != null && bluetoothSocket.isConnected()) {
             return true;
         } else {
-            Log.e(TAG, "bluetooth not connected (make sure you have called 'connect' before attempting to send data)");
+            Log.e(TAG, "[ERROR] bluetooth not connected (make sure you have called 'connect' before attempting to send data)");
             return false;
         }
     }

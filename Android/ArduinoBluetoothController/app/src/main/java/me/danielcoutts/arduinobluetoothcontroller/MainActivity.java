@@ -8,6 +8,12 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * Basic implementation of SerialBluetoothHelper to send serial Bluetooth
+ * data to an HC-06 Bluetooth device connected to an Arduino Uno.
+ *
+ * Created by Daniel Coutts. https://github.com/DanielCoutts
+ */
 public class MainActivity extends AppCompatActivity {
 
     private static final String MAC_ADDRESS = "20:15:12:08:63:79";
